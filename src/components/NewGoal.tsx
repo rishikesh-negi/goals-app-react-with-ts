@@ -20,6 +20,7 @@ const NewGoal: FC<NewGoalProps> = function ({ onAddGoal }) {
 
     e.currentTarget.reset();
     onAddGoal(enteredGoal, enteredSummary);
+    goalRef.current?.focus();
   }
 
   return (
