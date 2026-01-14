@@ -32,8 +32,8 @@ const CourseGoal: FC<CourseGoalProps> = ({ title, onDelete, id, children }) => (
     <div>
       <h2>{title}</h2>
       {children}
-      <button onClick={() => onDelete(id)}>Delete</button>
     </div>
+    <button onClick={() => onDelete(id)}>Delete</button>
   </article>
 );
 // FC, PropsWithChildren, and ReactNode are built-in generic types in the "@types/react" package
