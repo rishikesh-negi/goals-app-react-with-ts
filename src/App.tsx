@@ -3,7 +3,7 @@ import { useState } from "react";
 import goalsImg from "./assets/goals.jpg";
 import Header from "./components/Header.tsx";
 import NewGoal from "./components/NewGoal.tsx";
-import CourseGoalsList from "./components/CourseGoalsList.tsx";
+import GoalsList from "./components/GoalsList.tsx";
 
 export type CourseGoal = {
   title: string;
@@ -30,10 +30,10 @@ export default function App() {
   return (
     <main>
       <Header image={{ src: goalsImg, alt: "Image with your goals text" }}>
-        <h1>Your React + TypeScript Goals</h1>
+        <h1>Your {new Date().getFullYear()} Goals</h1>
       </Header>
       <NewGoal onAddGoal={handleAddGoal} />
-      <CourseGoalsList goals={goals} onDelete={handleDeleteGoal} />
+      <GoalsList goals={goals} onDelete={handleDeleteGoal} />
     </main>
   );
 }
