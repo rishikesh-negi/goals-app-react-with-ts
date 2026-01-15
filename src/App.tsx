@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import goalsImg from "./assets/goals.jpg";
+import goalsImg from "./assets/goals.png";
 import Header from "./components/Header.tsx";
 import NewGoal from "./components/NewGoal.tsx";
 import GoalsList from "./components/GoalsList.tsx";
