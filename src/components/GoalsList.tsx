@@ -1,6 +1,6 @@
 import type { CourseGoal as CourseGoalType } from "../App";
 
-import CourseGoal from "./Goal";
+import Goal from "./Goal";
 import InfoBox from "./InfoBox";
 
 type CourseGoalsListProps = {
@@ -31,9 +31,9 @@ export default function CourseGoalsList({
       <ul>
         {goals.map((goal) => (
           <li key={goal.id}>
-            <CourseGoal title={goal.title} onDelete={onDelete} id={goal.id}>
+            <Goal title={goal.title} onDelete={onDelete} id={goal.id}>
               <p>{goal.description}</p>
-            </CourseGoal>
+            </Goal>
           </li>
         ))}
       </ul>
